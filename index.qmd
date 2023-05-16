@@ -1,0 +1,122 @@
+---
+title: "Hello, jmpwashdata"
+format: html
+---
+
+```{r}
+
+library(jmpwashdata)
+library(tidyverse)
+
+```
+
+# Data
+
+## R Package `jmpwashdata`
+
+For this analysis we will use the `jmpwashdata` R Package by [Citation.]
+
+```{r}
+
+```
+
+## World Bank income groups
+
+World bank income groups data was downloaded using a script in `src/get_web_income.R` and are imported here.
+
+```{r}
+
+income_groups_df <- read_rds("data/wb-income-groups.rds")
+
+```
+
+## Data wrangling
+
+Data for the most recent year, basic sanitation in urban areas, calculate urban population, and join income groups.
+
+```{r}
+
+jmp_wld_sanitation_gdp_income <- jmp_wld_sanitation |> 
+  filter(year == max(year)) |> 
+  select(name:prop_u, san_bas_u) |> 
+  mutate(pop_u = pop_n * 1000 * prop_u / 100) |> 
+  select(-pop_n, -prop_u) |> 
+  left_join(income_groups_df) |> 
+  drop_na(san_bas_u, income_group)
+
+```
+
+## Income
+
+```{r}
+
+jmp_wld_sanitation_gdp_income |> 
+  ggplot(aes(x = income_group, y = san_bas_u, color = income_group)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0.1, size = 5, alpha = 0.5) +
+  labs(
+    title = "access to basic sanitation services in urban areas",
+    subtitle = "by income groups",
+    x = NULL,
+    y = "percent"
+    ) +
+  theme_minimal(base_size = 16) +
+  theme(legend.position = "none")
+```
+
+## Regions
+
+```{r}
+
+jmp_reg_sanitation |> 
+  filter(year == max(year)) |> 
+  select(region, year, san_bas_u:san_od_u) |> 
+  gt::gt()
+
+```
+
+
+
+
+## Uganda
+
+```{r}
+
+color_scale_sanitation <- c("#8cce8f", "#fff381", "#ffda5a", "#ffbc02")
+
+# fct_sanitation <- c("At least basic", "Limited (shared)", "Unimproved", "Open defecation")
+
+fct_sanitation <- c("san_bas_n", "san_lim_n", "san_unimp_n", "san_od_n")
+
+jmp_wld_sanitation  |> 
+  select(name, iso3, year, san_bas_n:san_od_n) |> 
+  filter(iso3 == "UGA") |> 
+  filter(year == 2000 | year == 2020) |> 
+  pivot_longer(
+    cols = san_bas_n:san_od_n,
+    names_to = "indicator",
+    values_to = "percent"
+  ) |> 
+  #mutate(indicator = factor(indicator, level = fct_sanitation)) |> 
+  ggplot(aes(x = year, y = percent, fill = indicator)) +
+  geom_area() +
+  labs(
+    title = "Uganda: sanitation ladder",
+    x = NULL, 
+    y = "percent",
+    fill = "service levels"
+  ) +
+  scale_fill_manual(values = color_scale_sanitation) +
+  scale_x_continuous(breaks = c(2000, 2020)) +
+  theme_minimal(base_size = 16) +
+  theme(panel.grid.minor = element_blank())
+
+```
+
+# Countries
+
+```{r}
+jmp_reg_sanitation
+```
+
+
