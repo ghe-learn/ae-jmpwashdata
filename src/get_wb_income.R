@@ -14,7 +14,7 @@ income_groups_levels <-  c("High income",
                            "Low income")
 
 
-readxl::read_excel("data/wb-income-groups.xlsx") |>
+readxl::read_excel("data/wb-income-groups.xlsx", n_max = 219) |>
   select(iso3 = Code, income_group = `Income group`) |>
   mutate(income_group = factor(income_group, level = income_groups_levels)) |>
   write_rds("data/wb-income-groups.rds")
