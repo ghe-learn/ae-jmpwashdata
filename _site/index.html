@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hello, jmpwashdata</title>
+<title>Hello Quarto - Hello, Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -76,29 +76,112 @@ div.csl-indent {
 }</style>
 
 
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Hello Quarto</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Hello, Quarto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data" id="toc-data" class="nav-link active" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#r-package-jmpwashdata" id="toc-r-package-jmpwashdata" class="nav-link" data-scroll-target="#r-package-jmpwashdata">R Package jmpwashdata</a></li>
+  <li><a href="#world-bank-income-groups" id="toc-world-bank-income-groups" class="nav-link" data-scroll-target="#world-bank-income-groups">World Bank income groups</a></li>
+  </ul></li>
+  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data wrangling</a>
+  <ul class="collapse">
+  <li><a href="#basic-sanitation-gdp" id="toc-basic-sanitation-gdp" class="nav-link" data-scroll-target="#basic-sanitation-gdp">Basic Sanitation &amp; GDP</a></li>
+  <li><a href="#basic-sanitation-uganda" id="toc-basic-sanitation-uganda" class="nav-link" data-scroll-target="#basic-sanitation-uganda">Basic Sanitation Uganda</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#income" id="toc-income" class="nav-link" data-scroll-target="#income">Income</a></li>
+  <li><a href="#regions" id="toc-regions" class="nav-link" data-scroll-target="#regions">Regions</a></li>
+  <li><a href="#uganda" id="toc-uganda" class="nav-link" data-scroll-target="#uganda">Uganda</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello, <code>jmpwashdata</code></h1>
+<h1 class="title">Hello, Quarto</h1>
 </div>
 
 
@@ -127,135 +210,33 @@ div.csl-indent {
 </section>
 <section id="world-bank-income-groups" class="level2">
 <h2 class="anchored" data-anchor-id="world-bank-income-groups">World Bank income groups</h2>
-<p>We will also use the World Bank income classification for countries. This data was downloaded and stored as an XLSX file.</p>
+<p>We will also use the World Bank income classification for 218 countries. This data was downloaded and stored as an XLSX file using an R script in <code>src</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>income_groups_df <span class="ot">&lt;-</span> <span class="fu">read_rds</span>(<span class="st">"data/wb-income-groups.rds"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="data-wrangling---world" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="data-wrangling---world">Data wrangling - World</h2>
-<p>Data for the most recent year, basic sanitation in urban areas, calculate urban population, and join income groups.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform data manipulation operations on the jmp_wld_sanitation data frame</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>jmp_wld_sanitation_gdp_income <span class="ot">&lt;-</span> jmp_wld_sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter the rows where the year column is equal to the maximum year value</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="fu">max</span>(year)) <span class="sc">|&gt;</span> </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select the columns from name to prop_u and the san_bas_u column</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name<span class="sc">:</span>prop_u, san_bas_u) <span class="sc">|&gt;</span> </span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a new column named pop_u</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pop_u =</span> pop_n <span class="sc">*</span> <span class="dv">1000</span> <span class="sc">*</span> prop_u <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop the pop_n and prop_u columns</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>pop_n, <span class="sc">-</span>prop_u) <span class="sc">|&gt;</span> </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Perform a left join with the income_groups_df data frame</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(income_groups_df) <span class="sc">|&gt;</span> </span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop the rows that have missing values in the san_bas_u &amp; income_group cols</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(san_bas_u, income_group)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Joining with `by = join_by(iso3)`</code></pre>
-</div>
-</div>
-</section>
-<section id="data-wrangling---uganda" class="level2">
-<h2 class="anchored" data-anchor-id="data-wrangling---uganda">Data wrangling - Uganda</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of color codes</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>color_scale_sanitation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#8cce8f"</span>, <span class="st">"#fff381"</span>, <span class="st">"#ffda5a"</span>, <span class="st">"#ffbc02"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of sanitation indicators</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>fct_sanitation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"basic"</span>, <span class="st">"limited"</span>, <span class="st">"unimproved"</span>, <span class="st">"open defecation"</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform data manipulation operations on the jmp_wld_sanitation data frame</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>jmp_uga_sanitation <span class="ot">&lt;-</span> jmp_wld_sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter the rows where the iso3 column is equal to "UGA" and the year column </span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># is equal to 2000 or 2020</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(iso3 <span class="sc">==</span> <span class="st">"UGA"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2000</span> <span class="sc">|</span> year <span class="sc">==</span> <span class="dv">2020</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select the name, iso3, year, and columns from san_bas_n to san_od_n</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, iso3, year, san_bas_n<span class="sc">:</span>san_od_n) <span class="sc">|&gt;</span> </span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reshape the data frame from wide to long format</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> san_bas_n<span class="sc">:</span>san_od_n, </span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"indicator"</span>, </span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"percent"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Rename the indicator column based on the values of the san_bas_n to san_od_n</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># columns</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">indicator =</span> <span class="fu">case_when</span>(</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_bas_n"</span> <span class="sc">~</span> <span class="st">"basic"</span>,</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_lim_n"</span> <span class="sc">~</span> <span class="st">"limited"</span>,</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_unimp_n"</span> <span class="sc">~</span> <span class="st">"unimproved"</span>,</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_od_n"</span> <span class="sc">~</span> <span class="st">"open defecation"</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span> </span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Convert the indicator column to a factor with levels specified by the </span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># fct_sanitation vector</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">indicator =</span> <span class="fu">factor</span>(indicator, <span class="at">level =</span> fct_sanitation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="income" class="level2">
-<h2 class="anchored" data-anchor-id="income">Income</h2>
-<p><a href="#fig-san-bas-u-income">Figure&nbsp;1</a> is a box- and jitterplot of countries with percentages of populations with access to basic sanitation in 2020 grouped by income classifications.</p>
-<div class="cell" data-output-location="slide">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> jmp_wld_sanitation_gdp_income,</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> income_group, </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> san_bas_u, </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">color =</span> income_group)) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"percent"</span>) <span class="sc">+</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_colorblind</span>() <span class="sc">+</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">16</span>) <span class="sc">+</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>income_groups_df <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(income_group) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="fig-san-bas-u-income" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="index_files/figure-html/fig-san-bas-u-income-1.png" class="img-fluid figure-img" alt="A boxplot with jittered points overlaid. The x-axis represents income groups, while the y-axis represents the percentage of the population with access to basic sanitation. There is a positive, linear association increases. " width="672"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Access to basic sanitation (urban) in 2020 by income classifications.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="regions" class="level2">
-<h2 class="anchored" data-anchor-id="regions">Regions</h2>
-<p><a href="#tbl-reg-sanitation">Table&nbsp;1</a> shows urban sanitation indicators for global regions in 2020.</p>
-<div class="cell" data-output-location="slide">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>jmp_reg_sanitation <span class="sc">|&gt;</span> </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="fu">max</span>(year)) <span class="sc">|&gt;</span> </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(region, <span class="st">"income"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(region, san_bas_u<span class="sc">:</span>san_od_u) <span class="sc">|&gt;</span> </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">rowname_col =</span> <span class="st">"region"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#tab_header(</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  title = "Sanitation Indicators",</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  subtitle = "Regions 2020"</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#) |&gt; </span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_bas_u =</span> <span class="fu">md</span>(<span class="st">"**basic**"</span>),</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_lim_u =</span> <span class="fu">md</span>(<span class="st">"**limited**"</span>),</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_unimp_u =</span> <span class="fu">md</span>(<span class="st">"**unimproved**"</span>),</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_od_u =</span> <span class="fu">md</span>(<span class="st">"**open defecation**"</span>)</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_percent</span>(<span class="at">columns =</span> san_bas_u<span class="sc">:</span>san_od_u,</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">decimals =</span> <span class="dv">0</span>, </span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">scale_values =</span> <span class="cn">FALSE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="tbl-reg-sanitation" class="anchored">
 
-<div id="hvbagprabk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hvbagprabk table {
+<div id="jkiwhtuzqn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jkiwhtuzqn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hvbagprabk thead, #hvbagprabk tbody, #hvbagprabk tfoot, #hvbagprabk tr, #hvbagprabk td, #hvbagprabk th {
+#jkiwhtuzqn thead, #jkiwhtuzqn tbody, #jkiwhtuzqn tfoot, #jkiwhtuzqn tr, #jkiwhtuzqn td, #jkiwhtuzqn th {
   border-style: none;
 }
 
-#hvbagprabk p {
+#jkiwhtuzqn p {
   margin: 0;
   padding: 0;
 }
 
-#hvbagprabk .gt_table {
+#jkiwhtuzqn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -281,12 +262,12 @@ div.csl-indent {
   border-left-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_caption {
+#jkiwhtuzqn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hvbagprabk .gt_title {
+#jkiwhtuzqn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -298,7 +279,7 @@ div.csl-indent {
   border-bottom-width: 0;
 }
 
-#hvbagprabk .gt_subtitle {
+#jkiwhtuzqn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -310,7 +291,7 @@ div.csl-indent {
   border-top-width: 0;
 }
 
-#hvbagprabk .gt_heading {
+#jkiwhtuzqn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -322,13 +303,13 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_bottom_border {
+#jkiwhtuzqn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_col_headings {
+#jkiwhtuzqn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -343,7 +324,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_col_heading {
+#jkiwhtuzqn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -363,7 +344,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#hvbagprabk .gt_column_spanner_outer {
+#jkiwhtuzqn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -375,15 +356,15 @@ div.csl-indent {
   padding-right: 4px;
 }
 
-#hvbagprabk .gt_column_spanner_outer:first-child {
+#jkiwhtuzqn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hvbagprabk .gt_column_spanner_outer:last-child {
+#jkiwhtuzqn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hvbagprabk .gt_column_spanner {
+#jkiwhtuzqn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -395,11 +376,11 @@ div.csl-indent {
   width: 100%;
 }
 
-#hvbagprabk .gt_spanner_row {
+#jkiwhtuzqn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hvbagprabk .gt_group_heading {
+#jkiwhtuzqn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -425,7 +406,7 @@ div.csl-indent {
   text-align: left;
 }
 
-#hvbagprabk .gt_empty_group_heading {
+#jkiwhtuzqn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -440,15 +421,15 @@ div.csl-indent {
   vertical-align: middle;
 }
 
-#hvbagprabk .gt_from_md > :first-child {
+#jkiwhtuzqn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hvbagprabk .gt_from_md > :last-child {
+#jkiwhtuzqn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hvbagprabk .gt_row {
+#jkiwhtuzqn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -467,7 +448,7 @@ div.csl-indent {
   overflow-x: hidden;
 }
 
-#hvbagprabk .gt_stub {
+#jkiwhtuzqn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -480,7 +461,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hvbagprabk .gt_stub_row_group {
+#jkiwhtuzqn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -494,15 +475,15 @@ div.csl-indent {
   vertical-align: top;
 }
 
-#hvbagprabk .gt_row_group_first td {
+#jkiwhtuzqn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hvbagprabk .gt_row_group_first th {
+#jkiwhtuzqn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hvbagprabk .gt_summary_row {
+#jkiwhtuzqn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -512,16 +493,16 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hvbagprabk .gt_first_summary_row {
+#jkiwhtuzqn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_first_summary_row.thick {
+#jkiwhtuzqn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hvbagprabk .gt_last_summary_row {
+#jkiwhtuzqn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -531,7 +512,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_grand_summary_row {
+#jkiwhtuzqn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -541,7 +522,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hvbagprabk .gt_first_grand_summary_row {
+#jkiwhtuzqn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -551,7 +532,7 @@ div.csl-indent {
   border-top-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_last_grand_summary_row_top {
+#jkiwhtuzqn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -561,11 +542,11 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_striped {
+#jkiwhtuzqn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hvbagprabk .gt_table_body {
+#jkiwhtuzqn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -574,7 +555,7 @@ div.csl-indent {
   border-bottom-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_footnotes {
+#jkiwhtuzqn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -588,7 +569,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_footnote {
+#jkiwhtuzqn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -597,7 +578,7 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hvbagprabk .gt_sourcenotes {
+#jkiwhtuzqn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -611,7 +592,7 @@ div.csl-indent {
   border-right-color: #D3D3D3;
 }
 
-#hvbagprabk .gt_sourcenote {
+#jkiwhtuzqn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -619,63 +600,633 @@ div.csl-indent {
   padding-right: 5px;
 }
 
-#hvbagprabk .gt_left {
+#jkiwhtuzqn .gt_left {
   text-align: left;
 }
 
-#hvbagprabk .gt_center {
+#jkiwhtuzqn .gt_center {
   text-align: center;
 }
 
-#hvbagprabk .gt_right {
+#jkiwhtuzqn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hvbagprabk .gt_font_normal {
+#jkiwhtuzqn .gt_font_normal {
   font-weight: normal;
 }
 
-#hvbagprabk .gt_font_bold {
+#jkiwhtuzqn .gt_font_bold {
   font-weight: bold;
 }
 
-#hvbagprabk .gt_font_italic {
+#jkiwhtuzqn .gt_font_italic {
   font-style: italic;
 }
 
-#hvbagprabk .gt_super {
+#jkiwhtuzqn .gt_super {
   font-size: 65%;
 }
 
-#hvbagprabk .gt_footnote_marks {
+#jkiwhtuzqn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hvbagprabk .gt_asterisk {
+#jkiwhtuzqn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hvbagprabk .gt_indent_1 {
+#jkiwhtuzqn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hvbagprabk .gt_indent_2 {
+#jkiwhtuzqn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hvbagprabk .gt_indent_3 {
+#jkiwhtuzqn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hvbagprabk .gt_indent_4 {
+#jkiwhtuzqn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hvbagprabk .gt_indent_5 {
+#jkiwhtuzqn .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="income_group">income_group</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="n">n</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="income_group" class="gt_row gt_center">High income</td>
+<td headers="n" class="gt_row gt_right">81</td></tr>
+    <tr><td headers="income_group" class="gt_row gt_center">Upper middle income</td>
+<td headers="n" class="gt_row gt_right">54</td></tr>
+    <tr><td headers="income_group" class="gt_row gt_center">Lower middle income</td>
+<td headers="n" class="gt_row gt_right">54</td></tr>
+    <tr><td headers="income_group" class="gt_row gt_center">Low income</td>
+<td headers="n" class="gt_row gt_right">28</td></tr>
+    <tr><td headers="income_group" class="gt_row gt_center">NA</td>
+<td headers="n" class="gt_row gt_right">1</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="data-wrangling" class="level1">
+<h1>Data wrangling</h1>
+<section id="basic-sanitation-gdp" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="basic-sanitation-gdp">Basic Sanitation &amp; GDP</h2>
+<p>Data for the most recent year, basic sanitation in urban areas, calculate urban population, and join income groups.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform data manipulation operations on the jmp_wld_sanitation data frame</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>jmp_wld_sanitation_gdp_income <span class="ot">&lt;-</span> jmp_wld_sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter the rows where the year column is equal to the maximum year value</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="fu">max</span>(year)) <span class="sc">|&gt;</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select the columns from name to prop_u and the san_bas_u column</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name<span class="sc">:</span>prop_u, san_bas_u) <span class="sc">|&gt;</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a new column named pop_u</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pop_u =</span> pop_n <span class="sc">*</span> <span class="dv">1000</span> <span class="sc">*</span> prop_u <span class="sc">/</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop the pop_n and prop_u columns</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>pop_n, <span class="sc">-</span>prop_u) <span class="sc">|&gt;</span> </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Perform a left join with the income_groups_df data frame</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(income_groups_df) <span class="sc">|&gt;</span> </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Drop the rows that have missing values in the san_bas_u &amp; income_group cols</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>(san_bas_u, income_group)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(iso3)`</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-sanitation-uganda" class="level2">
+<h2 class="anchored" data-anchor-id="basic-sanitation-uganda">Basic Sanitation Uganda</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of color codes</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>color_scale_sanitation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"#8cce8f"</span>, <span class="st">"#fff381"</span>, <span class="st">"#ffda5a"</span>, <span class="st">"#ffbc02"</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of sanitation indicators</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>fct_sanitation <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"basic"</span>, <span class="st">"limited"</span>, <span class="st">"unimproved"</span>, <span class="st">"open defecation"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform data manipulation operations on the jmp_wld_sanitation data frame</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>jmp_uga_sanitation <span class="ot">&lt;-</span> jmp_wld_sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filter the rows where the iso3 column is equal to "UGA" and the year column </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># is equal to 2000 or 2020</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(iso3 <span class="sc">==</span> <span class="st">"UGA"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2000</span> <span class="sc">|</span> year <span class="sc">==</span> <span class="dv">2020</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Select the name, iso3, year, and columns from san_bas_n to san_od_n</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(name, iso3, year, san_bas_n<span class="sc">:</span>san_od_n) <span class="sc">|&gt;</span> </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reshape the data frame from wide to long format</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> san_bas_n<span class="sc">:</span>san_od_n, </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"indicator"</span>, </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"percent"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Rename the indicator column based on the values of the san_bas_n to san_od_n</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># columns</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">indicator =</span> <span class="fu">case_when</span>(</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_bas_n"</span> <span class="sc">~</span> <span class="st">"basic"</span>,</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_lim_n"</span> <span class="sc">~</span> <span class="st">"limited"</span>,</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_unimp_n"</span> <span class="sc">~</span> <span class="st">"unimproved"</span>,</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    indicator <span class="sc">==</span> <span class="st">"san_od_n"</span> <span class="sc">~</span> <span class="st">"open defecation"</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Convert the indicator column to a factor with levels specified by the </span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># fct_sanitation vector</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">indicator =</span> <span class="fu">factor</span>(indicator, <span class="at">level =</span> fct_sanitation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="income" class="level2">
+<h2 class="anchored" data-anchor-id="income">Income</h2>
+<p><a href="#fig-san-bas-u-income">Figure&nbsp;1</a> is a box- and jitterplot of countries with percentages of populations with access to basic sanitation in 2020 grouped by income classifications.</p>
+<div class="cell" data-output-location="slide">
+<div class="cell-output-display">
+<div id="fig-san-bas-u-income" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="index_files/figure-html/fig-san-bas-u-income-1.png" class="img-fluid figure-img" alt="A boxplot with jittered points overlaid. The x-axis represents income groups, while the y-axis represents the percentage of the population with access to basic sanitation. There is a positive, linear association increases. " width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Access to basic sanitation (urban) in 2020 by income classifications.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="regions" class="level2">
+<h2 class="anchored" data-anchor-id="regions">Regions</h2>
+<p><a href="#tbl-reg-sanitation">Table&nbsp;1</a> shows urban sanitation indicators for global regions in 2020.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>jmp_reg_sanitation <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="fu">max</span>(year)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">str_detect</span>(region, <span class="st">"income"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(region, san_bas_u<span class="sc">:</span>san_od_u) <span class="sc">|&gt;</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">rowname_col =</span> <span class="st">"region"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#tab_header(</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  title = "Sanitation Indicators",</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  subtitle = "Regions 2020"</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">#) |&gt; </span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_bas_u =</span> <span class="fu">md</span>(<span class="st">"**basic**"</span>),</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_lim_u =</span> <span class="fu">md</span>(<span class="st">"**limited**"</span>),</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_unimp_u =</span> <span class="fu">md</span>(<span class="st">"**unimproved**"</span>),</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">san_od_u =</span> <span class="fu">md</span>(<span class="st">"**open defecation**"</span>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fmt_percent</span>(<span class="at">columns =</span> san_bas_u<span class="sc">:</span>san_od_u,</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">decimals =</span> <span class="dv">0</span>, </span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">scale_values =</span> <span class="cn">FALSE</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-reg-sanitation" class="anchored">
+
+<div id="lherldiafv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lherldiafv table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#lherldiafv thead, #lherldiafv tbody, #lherldiafv tfoot, #lherldiafv tr, #lherldiafv td, #lherldiafv th {
+  border-style: none;
+}
+
+#lherldiafv p {
+  margin: 0;
+  padding: 0;
+}
+
+#lherldiafv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#lherldiafv .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#lherldiafv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#lherldiafv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#lherldiafv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lherldiafv .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lherldiafv .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lherldiafv .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#lherldiafv .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#lherldiafv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#lherldiafv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#lherldiafv .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#lherldiafv .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#lherldiafv .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#lherldiafv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#lherldiafv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#lherldiafv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#lherldiafv .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#lherldiafv .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lherldiafv .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#lherldiafv .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#lherldiafv .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#lherldiafv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lherldiafv .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#lherldiafv .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#lherldiafv .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lherldiafv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lherldiafv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#lherldiafv .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lherldiafv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#lherldiafv .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lherldiafv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lherldiafv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lherldiafv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lherldiafv .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lherldiafv .gt_left {
+  text-align: left;
+}
+
+#lherldiafv .gt_center {
+  text-align: center;
+}
+
+#lherldiafv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#lherldiafv .gt_font_normal {
+  font-weight: normal;
+}
+
+#lherldiafv .gt_font_bold {
+  font-weight: bold;
+}
+
+#lherldiafv .gt_font_italic {
+  font-style: italic;
+}
+
+#lherldiafv .gt_super {
+  font-size: 65%;
+}
+
+#lherldiafv .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#lherldiafv .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#lherldiafv .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#lherldiafv .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#lherldiafv .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#lherldiafv .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#lherldiafv .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -763,7 +1314,7 @@ div.csl-indent {
 <section id="uganda" class="level2">
 <h2 class="anchored" data-anchor-id="uganda">Uganda</h2>
 <p><a href="#fig-san-uga">Figure&nbsp;2</a> shows the sanitation ladder for Uganda.</p>
-<div class="cell" data-output-location="slide">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> jmp_uga_sanitation, </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> year, </span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">y =</span> percent, </span>
@@ -785,18 +1336,19 @@ div.csl-indent {
 </div>
 </div>
 </section>
-<section id="references" class="level2 unnumbered">
-
-
 </section>
+<section id="references" class="level1">
+
+
+
+
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-jmpwashdata" class="csl-entry" role="listitem">
 Dickinson, Nicolas. 2021. <span>“Jmpwashdata: WHO/UNICEF Joint Monitoring Programme Water and Sanitation Data.”</span>
 </div>
-</div></section></div></main>
-<!-- /main column -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

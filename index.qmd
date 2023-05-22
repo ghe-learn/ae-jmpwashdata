@@ -1,8 +1,13 @@
 ---
-title: "Hello, `jmpwashdata`"
-format: html
+title: "Hello, Quarto"
+format: 
+  html: 
+    toc: true
+  pdf:
+    toc: true
 execute: 
   echo: true
+  message: false
 bibliography: references.bib
 ---
 
@@ -24,7 +29,7 @@ library(ggthemes)
 
 ## World Bank income groups
 
-We will also use the World Bank income classification for countries. This data was downloaded and stored as an XLSX file.
+We will also use the World Bank income classification for 218 countries. This data was downloaded and stored as an XLSX file using an R script in `src`.
 
 ```{r}
 
@@ -32,7 +37,15 @@ income_groups_df <- read_rds("data/wb-income-groups.rds")
 
 ```
 
-## Data wrangling - World {.smaller}
+```{r}
+income_groups_df |> 
+  count(income_group) |> 
+  gt()
+```
+
+# Data wrangling
+
+## Basic Sanitation & GDP {.smaller}
 
 Data for the most recent year, basic sanitation in urban areas, calculate urban population, and join income groups.
 
@@ -54,7 +67,7 @@ jmp_wld_sanitation_gdp_income <- jmp_wld_sanitation |>
 
 ```
 
-## Data wrangling - Uganda
+## Basic Sanitation Uganda
 
 ```{r}
 
@@ -90,12 +103,19 @@ jmp_uga_sanitation <- jmp_wld_sanitation |>
 
 ```
 
+# Results
+
+## Basic Sanitation - ?
+
+[![A "hanging" toilet in Khulna, Bangladesh.](img/26473744850_32578ea50b_w.jpg)](https://www.flickr.com/photos/110829077@N08/26473744850/in/album-72157667598538232/)
+
 ## Income
 
 @fig-san-bas-u-income is a box- and jitterplot of countries with percentages of populations with access to basic sanitation in 2020 grouped by income classifications.
 
 ```{r}
 #| label: fig-san-bas-u-income
+#| echo: false
 #| fig-cap: Access to basic sanitation (urban) in 2020 by income classifications.
 #| fig-alt: |
 #|   A boxplot with jittered points overlaid. The x-axis represents income 
@@ -123,7 +143,6 @@ ggplot(data = jmp_wld_sanitation_gdp_income,
 ```{r}
 #| label: tbl-reg-sanitation
 #| tbl-cap: Urban sanitation indicators for global regions.
-#| output-location: slide
 
 jmp_reg_sanitation |> 
   filter(year == max(year)) |> 
@@ -154,7 +173,6 @@ jmp_reg_sanitation |>
 ```{r}
 #| label: fig-san-uga
 #| fig-cap: Sanitation indicators for Uganda on a national level.
-#| output-location: slide
 
 ggplot(data = jmp_uga_sanitation, 
        mapping = aes(x = year, 
@@ -170,4 +188,4 @@ ggplot(data = jmp_uga_sanitation,
 
 ```
 
-## References
+# References
